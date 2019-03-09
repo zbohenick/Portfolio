@@ -162,5 +162,11 @@ svg {
         "social"
         "cr";
         grid-gap: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .header {
+        margin-right: 10px;
+        margin-left: 10px;
     }
 }
