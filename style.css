@@ -92,9 +92,7 @@ h6 {
     grid-gap: 50px;
 }
 span {font-weight: 400; color: black;}
-.profile {
-    padding-left: 27px;
-}
+
 .work {
     padding-left: 27px;
     border-left: 1px solid #B7B7B7;
