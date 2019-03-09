@@ -27,6 +27,7 @@ img {
     padding-top: 30px;
 }
 .s1 {height: 40px;}
+.s2 {height: 30px; margin-bottom: 10px; width: 50%; border-bottom: 1px solid #B7B7B7;}
 p {
     line-height: 1.8;
     color: #6E6E6E;
@@ -59,7 +60,7 @@ h3 {
     content: "\2022"; 
     /* Unicode of character to precede the list item */
   
-    font-size: 2.5em; 
+    font-size: 3em; 
     /* em or %*/
    
     padding-right: -20px; 
@@ -67,8 +68,8 @@ h3 {
     /* use em*/
   
     position: relative;
-    top: .2em; 
-    left: -.85em;
+    top: .25em; 
+    left: -.69em;
     /* use em or % */
   
   }
@@ -92,10 +93,11 @@ h6 {
 }
 span {font-weight: 400; color: black;}
 .profile {
-    padding-left: 30px;
+    padding-left: 27px;
 }
 .work {
-    padding-left: 30px;
+    padding-left: 27px;
+    border-left: 1px solid #B7B7B7;
 }
 .col-2 {
     display: grid;
@@ -133,6 +135,10 @@ svg {
 }
 
 @media only screen and (max-width: 700px) {
+    .wrapper {
+        margin-left:0;
+        margin-right: 0;
+    }
     .grid {
      grid-template-columns: 1fr;
      grid-template-areas: 
@@ -145,12 +151,7 @@ svg {
     .col-2 {
         grid-area: two;
     }
-    .profile {
-        padding-left: 0px;
-    }
-    .work {
-        padding-left: 0px;
-    }
+
     .social {
         grid-area: social;
     }
