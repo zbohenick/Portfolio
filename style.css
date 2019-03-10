@@ -39,8 +39,8 @@ p {
 h1 {
     letter-spacing: 8px;
     font-size: 24pt;
-    color: #77A7B1;
     font-weight: 400;
+    color: #77A7B1;
 }
 h2 {
     padding-top: 20px;
@@ -131,8 +131,16 @@ svg {
     padding-left: 10px;
     fill: #77A7B1;
 }
+#globe {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: -2;
+}
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
     .wrapper {
         margin-left:0;
         margin-right: 0;
@@ -168,5 +176,6 @@ svg {
     .header {
         margin-right: 10px;
         margin-left: 10px;
+
     }
 }
