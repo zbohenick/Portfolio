@@ -110,7 +110,7 @@ span {font-weight: 400; color: black;}
     text-transform: uppercase;
 }
 #download:hover {
-    text-decoration: line-through;
+    color: rgb(77, 109, 116);
 }
 ul {
     padding-left: 50px;
@@ -138,6 +138,15 @@ svg {
     top: 20%;
     left: 10%;
     z-index: -2;
+}
+
+#link {
+    text-decoration: underline;
+    color: #77A7B1;
+
+}
+#link:hover {
+    color: rgb(77, 109, 116);
 }
 
 @media only screen and (max-width: 750px) {
