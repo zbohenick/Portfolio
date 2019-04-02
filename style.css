@@ -216,7 +216,9 @@ ul {
 .social {
     justify-self: end;
 }
+
 #resume {
+
     border: 1px solid #77A7B1;
     color: #77A7B1;
     border-radius: 2px;
@@ -280,6 +282,7 @@ svg {
         margin-left:0;
         margin-right: 0;
     }
+    
     .grid {
      grid-template-columns: 1fr;
      grid-template-areas: 
@@ -352,6 +355,8 @@ svg {
     .nav {
         justify-self: center;
         grid-gap: 40px;
+        padding-bottom: 5px;
+        padding-top: 5px;
     }
 
     #right {
