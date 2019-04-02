@@ -31,6 +31,9 @@ body {
     text-decoration: none;
     justify-self: end;
     align-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
 }
 .nav a {
     text-decoration:none;
@@ -213,6 +216,15 @@ ul {
 .social {
     justify-self: end;
 }
+#resume {
+    border: 1px solid #77A7B1;
+    color: #77A7B1;
+    border-radius: 2px;
+}
+#resume:hover {
+    background-color: #77A7B1;
+    color: white;
+}
 svg {
     height: 30px;
     width: 30px;
@@ -339,6 +351,7 @@ svg {
     }
     .nav {
         justify-self: center;
+        grid-gap: 40px;
     }
 
     #right {
