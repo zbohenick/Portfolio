@@ -270,6 +270,15 @@ svg {
     grid-template-columns: 1fr 1fr;
     margin-top: 40px;
 }
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+.info-grid p {
+    max-width: 90%;
+    padding: 5px;
+}
 
 .bar #back {
     justify-self: start;
