@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Poppins:400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<title>Zach Bohenick Portfolio</title>
+<link rel="stylesheet" href="./style.css">
+<style>
+        .hero-background {
+            background-image: url('./IVEO/drinkingfountain.jpg');
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        ul li::before {
+        color: #003791;
+        }
+        .in-text {
+            border-bottom: 2px solid #003791;
+        }
+        .title {
+            background-color: #003791;
+        }        
+        
+        
+        </style>
+</head>
+
+<body>
+<div class="fixed-top"></div>
+<div class="fixed-right"></div>
+<div class="wrapper">
+        <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+               <a href="index.html">Home</a>
+               <a href="work.html">Work</a>
+               <a href="ZachBohenickResume.pdf" target="_blank">Resume</a>
+               <a href="about.html">About</a>
+               <a href="mailto:zbohenick@gmail.com">Contact</a>
+        </div>
+    <div class="nav">
+        <div class="item">
+        <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+        <p>Menu</p>            
+        </div>
+        <div class="item">
+        <a href="mailto:zbohenick@gmail.com"><i class="far fa-paper-plane"></i></a>
+        <p>Contact</p>            
+        </div>
+        <div class="item">
+        <a href="ZachBohenickResume.pdf" target="_blank"><i class="far fa-sticky-note"></i></a>
+        <p>Resume</p>
+        </div>
+
+    </div>
+    <div class="main-content">
+        <div class="project-hero">
+
+            <div class="hero-background">
+
+            </div>   
+        </div>
+        <div class="case-intro">
+            <div class="title">
+                <h2>Transforming the way we think about public drinking fountains</h2>
+            </div>
+            <div class="main-intro">
+                <div class="overview">
+                    <p>As a witness to the devastating effects of the <a class="in-text" href="">Flint Water Crisis</a>, I designed an application to easily report water quality on our campus. I believe this solution has the power to inspire a community to be passionate about the safety and quality of public drinking water.</p>
+                    <h4>The challenge</h4>
+                    <ul>
+                        <li>Reducing public stigma around public drinking fountains.</li>
+                        <li>Making it easy for the community to find safe drinking water.</li>
+                        <li>Keeping students and faculty safe from drinking harmful pollutants.</li>
+                    </ul>
+                    <h4>Our approach</h4>
+                    <ul>
+                        <li>Gaining a holistic understanding of public drinking water systems.</li>
+                        <li>Creating a way for users to effortlessly report water quality.</li>
+                    </ul>
+                </div>
+                <div class="position">
+                    <h5>my role</h5>
+                    <p>UX & UI Designer</p>
+                    <h5>project type</h5>
+                    <p>Student Project</p>
+                    <h5>project duration</h5>
+                    <p>3 Months</p>
+                    <h5>tools</h5>
+                    <p>Pop App, Figma</p>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="main">
+        <h3>Taking student safety seriously</h3>
+        <p>After some preliminary research, I learned the dangers of toxins like lead and bacterial threats like e coli. These pollutants can leave students at serious risk, especially at public drinking fountains. To ensure the public’s safety, I decided to design the application in a way that allows users to report any drinking fountain on campus. </p> 
+        
+        <p>The low fidelity designs were tested using the Pop app. A user could access a map of campus or view individual floors of buildings. Using the application, a user could view whether a fountain was safe to drink from. The status of a drinking fountain would be determined by user input and reports from the local water treatment facility.</p>
+        <div class="three-images">
+            <img src="./IVEO/prot1.jpeg" alt="">
+            <img src="./IVEO/prot2.jpeg" alt="">
+            <img src="./IVEO/prot3.jpeg" alt="">
+        </div>
+        <h3>First iteration after further research</h3>
+        <p>While testing the prototype, I recognized that the app was both too complex and redundant. The water treatment facility personnel informed me that two fountains in the same building would not vary in safety. I decided to apply this information to my designs. </p>
+        <p>Instead of reviewing every drinking fountain in a building, I changed the goal of the application to review just one fountain in each building. This decision made the app much less complex. I removed the need for a map and reduced a lot of unnecessary content. I started playing with ways to simplify user testing in this second version.</p>
+        <div class="three-images">
+                <img src="./IVEO/lofi1.png" alt="">
+                <img src="./IVEO/lofi2.png" alt="">
+                <img src="./IVEO/lofi3.png" alt="">
+            </div>
+        <h3>Final solution</h3>
+        <p>The final design provides the user with useful data about drinking fountains on campus. After some further research, I finalized the necessary information users would need to report for the local water treatment facility. This data would also be provided to the local water treatment facility, allowing their team to diagnose any problems much easier.</p>
+        <img src="./IVEO/phones.png" alt="">
+        <div class="gif">
+            <p>Here is an animation demonstrating the reporting feature:</p>
+            <img src="./IVEO/prototype-vid.gif" alt="">            
+        </div>
+  
+        
+
+        </div>
+        
+        
+        <div class="footer">
+                <p class="copyright">&copy; 2019 Zach Bohenick</p>
+    
+            </div>
+        
+  
+
+
+    </div>
+</div>
+
+<div class="fixed-bottom"></div>
+
+
+
+
+
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Poppins:400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<title>Zach Bohenick Portfolio</title>
+<link rel="stylesheet" href="./style.css">
+<style>
+        .hero-background {
+            background-image: url('./IVEO/campusmap.jpg');
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        ul li::before {
+        color: #0F7173;
+        }
+        .in-text {
+            border-bottom: 2px solid #0F7173;
+        }
+        .title {
+            background-color: #0F7173;
+        }        
+        
+        
+        </style>
+</head>
+
+<body>
+<div class="fixed-top"></div>
+<div class="fixed-right"></div>
+<div class="wrapper">
+        <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+               <a href="index.html">Home</a>
+               <a href="work.html">Work</a>
+               <a href="ZachBohenickResume.pdf" target="_blank">Resume</a>
+               <a href="about.html">About</a>
+               <a href="mailto:zbohenick@gmail.com">Contact</a>
+        </div>
+    <div class="nav">
+        <div class="item">
+        <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+        <p>Menu</p>            
+        </div>
+        <div class="item">
+        <a href="mailto:zbohenick@gmail.com"><i class="far fa-paper-plane"></i></a>
+        <p>Contact</p>            
+        </div>
+        <div class="item">
+        <a href="ZachBohenickResume.pdf" target="_blank"><i class="far fa-sticky-note"></i></a>
+        <p>Resume</p>
+        </div>
+
+    </div>
+    <div class="main-content">
+        <div class="project-hero">
+        
+
+            <div class="hero-background">
+
+            </div>   
+        </div>
+        <div class="case-intro">
+            <div class="title">
+                <h2>Helping blind and visually-impaired students navigate on campus</h2>
+            </div>
+            <div class="main-intro">
+                <div class="overview">
+                    <p>I worked with a team of engineering majors, in collaboration with the <a class="in-text" href="">Resource Center for Persons with Disabilities</a>, to create a tactile map of Michigan State University’s campus. Our work currently assists blind and visually-impaired students navigate on campus.</p>
+                    <h4>The challenge</h4>
+                    <ul>
+                        <li>Learning existing best practice for tactile maps.</li>
+                        <li>Innovating ways to simplify when necessary while preserving details.</li>
+                        <li>Familiarizing ourselves with IVEO technology, and braille.</li>
+                    </ul>
+                    <h4>Our approach</h4>
+                    <ul>
+                        <li>Discussing challenges and possible solutions with blind and visually-impaired students.</li>
+                        <li>Using research to guide brainstorming sessions.
+                            </li>
+                        <li>Designing, printing, and programming responsive, tactile maps of campus.</li>
+                    </ul>
+                </div>
+                <div class="position">
+                    <h5>my role</h5>
+                    <p>Design Engineer</p>
+                    <h5>project type</h5>
+                    <p>Student Project</p>
+                    <h5>project duration</h5>
+                    <p>1 Month</p>
+                    <h5>tools</h5>
+                    <p>IVEO technology</p>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="main">
+        <h3>Braille maps help students gain a concept of their surroundings</h3>
+        <p>My team met with blind and visually impaired students to learn about their day-to-day challenges navigating campus. We did our best to use their input to create a map and interface that best suits their needs.</p> 
+        
+        <p>A major challenge for blind students is gaining a concept of their surroundings. Our research found that braille maps can help with this challenge, but are often hard to find. We determined that a tactile map of campus would provide new and current students with a better way of understanding their surroundings.</p>
+        <img src="./IVEO/map.png" alt="">
+        <h3>Innovating ways to manage clutter</h3>
+        <p>Our initial solution was to create a single tactile map of campus, but we soon discovered that it was difficult to include all necessary information. To improve students’ overall experience, I proposed we divide the map into separate categories.</p>
+        <p>We also decided to include IVEO technology which could audibly relay names of features to the user by pressing down on the map. These solutions greatly improved the experience by reducing clutter.</p>
+        <img src="./IVEO/map1.png" alt="">
+        
+        <h3>Talking & tactile maps</h3>
+        <p>Our team developed multiple state-of-the-art tactile maps that allow blind and visually impaired students to easily explore Michigan State University's main campus. The map allows the user to virtually tour the campus hearing the names of buildings, roads, and other landmarks when pressed. The map also provides a mode whereby a student may type the name of a campus landmark with the computer providing directional cues for locating the feature.</p>
+        <img src="./IVEO/southmap.png" alt="">
+
+        </div>
+        
+        
+        <div class="footer">
+                <p class="copyright">&copy; 2019 Zach Bohenick</p>
+    
+            </div>
+        
+  
+
+
+    </div>
+</div>
+
+<div class="fixed-bottom"></div>
+
+
+
+
+
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 

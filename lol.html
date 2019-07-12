@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Poppins:400,600,700&display=swap" rel="stylesheet">
+<style>
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
+    font-size: 4em;
+    font-weight: 700;
+}
+p {
+    font-family: 'Merriweather', serif;
+    max-width: 700px;
+}
+.sidebar > a {
+    letter-spacing: -1.5%;
+    font-weight: 700;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  margin-top: 25px;
+  margin-left: 25px;
+  background-color: #324B50;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 20vw;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  width: 100px;
+}
+
+.sidebar > .closebtn {
+    padding-left: 20px;
+    padding-right: 8vw;
+    margin-top: 10px;
+}
+
+.sidebar a:hover {
+  transform: translateX(20px);
+}
+.sidebar .closebtn:hover {
+    transform: none;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #324B50;
+  color: white;
+  padding-bottom: 5px;
+  border: none;
+  border-bottom: 2px solid #324B50;
+}
+
+.openbtn:hover {
+  color: white;
+  border-bottom: 2px solid orange;
+}
+.openbtn:focus {
+    outline: none;
+} 
+p {
+    margin-bottom: 40px;
+}
+.submenu a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 0px;
+    margin-right: 20px;
+    border-bottom: 2px solid #43737C;
+    font-weight:600;
+}
+.submenu a:hover {
+    border-bottom: 2px solid orange;
+}
+
+#main {
+  transition: margin-left .5s;
+  background-color: #324B50;
+  box-shadow: 0 5px 5px -5px #333;
+  padding-top: 10px;
+}
+.title {
+    padding-top: 80px;
+    padding-bottom: 1px;
+    padding-left: 10vw;
+    padding-right: 20px;
+    color: white;
+    background-color: #43737C;
+}
+.nav {
+    margin-top: 25px;
+    margin-left: 25px;
+    height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  background-color: #324B50;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.content {
+    margin-left: 160px;
+    margin-top: 25px;
+    margin-right: 25px;
+    height: 2000px;
+    background-color: #F8F8F8;
+}
+.bottomBorder {
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    width: 100%;
+    bottom: 0;
+    left:0;
+    height: 25px;
+}
+.topBorder {
+    position: fixed;
+    z-index: 3;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left:0;
+    height: 25px;
+}
+.rightBorder {
+    position: fixed;
+    z-index: 5;
+    background-color: white;
+    width: 25px;
+    top: 0;
+    right:0;
+    height: 100%;
+}
+
+@media screen and (max-height: 500px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+@media screen and (max-width: 900px) {
+    .nav {
+    margin: 0px;
+    height: 50px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.content {
+    margin: 0px;
+    margin-top: 50px;
+    height: 2000px;
+    background-color: #F8F8F8;
+}
+.topBorder {
+    height: 0px;
+}
+.rightBorder {
+    width: 0px;
+}
+.bottomBorder {
+    height: 0px;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  margin-top: 0px;
+  margin-left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar > .closebtn {
+    padding-left: 20px;
+    padding-right: 0px;
+    margin-top: 10px;
+}
+
+.sidebar a:hover {
+  transform: none;
+}
+}
+</style>
+</head>
+<body>
+    <div id="mySidebar" class="sidebar">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">Home</a>
+    <a href="#">Work</a>
+    <a href="#">Resume</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+    </div>
+<div class="bottomBorder"></div>
+<div class="topBorder"></div>
+<div class="rightBorder">
+
+</div>
+<div class="nav">
+        <button class="openbtn" onclick="openNav()">Menu</button>
+        <button class="openbtn" onclick="openNav()">Contact</button>
+        <button class="openbtn" onclick="openNav()">Resume</button>
+</div>
+<div class="content">
+    <div class="title">
+        <h2>Title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias ipsam eum cupiditate aspernatur officia. Laboriosam nam laborum alias. Iure perspiciatis expedita eligendi ipsa blanditiis illo nisi commodi. In, nisi laborum.</p>
+    </div>
+
+
+
+</div>
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
