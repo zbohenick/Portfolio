@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Poppins:400,600,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<title>Zach Bohenick Portfolio</title>
+<link rel="stylesheet" href="./style.css">
+<style>
+        h2 {
+            margin: 0;
+            padding: 0;
+            max-width: 50%;
+            font-size: 1.3em;
+        }
+        h1 {
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li::before {
+        color: #003791;
+        }
+        .in-text {
+            border-bottom: 2px solid #003791;
+        }
+        .title {
+            background-color: #003791;
+        }        
+        @media only screen and (max-width: 768px) {
+
+        }
+        
+        </style>
+</head>
+
+<body>
+<div class="fixed-top"></div>
+<div class="fixed-right"></div>
+<div class="wrapper">
+        <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+               <a href="index.html">Home</a>
+               <a href="work.html">Work</a>
+               <a href="ZachBohenickResume.pdf" target="_blank">Resume</a>
+               <a href="about.html">About</a>
+               <a href="mailto:zbohenick@gmail.com">Contact</a>
+        </div>
+    <div class="nav">
+        <div class="item">
+        <button class="openbtn" onclick="openNav()"><i class="fas fa-bars"></i></button>
+        <p>Menu</p>            
+        </div>
+        <div class="item">
+        <a href="mailto:zbohenick@gmail.com"><i class="far fa-paper-plane"></i></a>
+        <p>Contact</p>            
+        </div>
+        <div class="item">
+        <a href="ZachBohenickResume.pdf" target="_blank"><i class="far fa-sticky-note"></i></a>
+        <p>Resume</p>
+        </div>
+
+    </div>
+    <div class="main-content">
+        <div class="project-hero">
+        
+            <div class="top-gradient">
+                <div class="top-gradient-text">
+                    <h1>Work</h1>
+                    <p>Some of the projects I've worked on.</p>
+                </div>
+
+            </div>
+
+        </div>
+        <a class="study"href="iveo.html">
+
+        <div class="case-preview1">
+                <p class="strong">Case Study:</p>
+                <h2>Helping blind and visually-impaired students navigate on campus</h2>
+        </div>
+        </a>
+        <a class="study"href="water.html">
+        <div class="case-preview2">
+                <p class="strong">Case Study:</p>
+                <h2>Transforming the way we think about public drinking fountains</h2>
+        </div>
+        </a>
+        <a class="study"href="oma.html">
+        <div class="case-preview3">
+                <p class="strong">Case Study:</p>
+                <h2>Improving community engagement in the Greater Lansing Area</h2>
+        </div>
+        </a>
+        
+        
+        <div class="footer">
+                <p class="copyright">&copy; 2019 Zach Bohenick</p>
+    
+            </div>
+        
+  
+
+
+    </div>
+</div>
+
+<div class="fixed-bottom"></div>
+
+
+
+
+
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
+</body>
+</html> 
