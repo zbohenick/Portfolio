@@ -313,7 +313,11 @@ button:focus {
 }
 .study:hover .case-preview4{
     background-size: 40%;
-    background-color: #2DA34F;
+    background-color: #2E2E2E;
+}
+.study:hover .case-preview5{
+    background-size: 40%;
+    background-color: #2E2E2E;
 }
 .case-preview1 {
     color: white;
@@ -357,10 +361,18 @@ button:focus {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: rgba(45, 163, 78, 0.548);
-    background-image: url('./IVEO/me.jpeg');
+    
     background-size: 35%;
     background-repeat: no-repeat;
     background-position: right;
+    transition:.5s;
+}
+.case-preview5 {
+    color: white;
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(46, 46, 46);
     transition:.5s;
 }
 
@@ -368,10 +380,25 @@ button:focus {
 .footer {
     height: 50px;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: #2E2E2E;
-    align-content: center;
-    justify-content: right;
+    align-items: center;
+    justify-items: right;
     
+}
+.social {
+    justify-self: left;
+    margin-left: 20px;
+}
+.social i {
+    padding: 10px;
+    margin-right: 20px;
+    font-size: 1.3em;
+    color: rgb(107, 107, 107);
+    transition: .5s;
+}
+.social i:hover {
+    color: white;
 }
 .footer p {
     margin: 0;
